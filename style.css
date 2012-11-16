@@ -21,6 +21,10 @@ h2{
 	font-weight:normal;
 }
 
+p{
+	margin-top:0;
+}
+
 h3{
 	font-size: 11pt;
 	color: #666;
@@ -106,6 +110,12 @@ li{
 
 #Direccion{
 	margin:0;
+	line-height:150%;
+	font-size:12pt;
+}
+#Direccion:before{
+	content:url(img/marker.png);
+	margin-right: 12px;
 }
 
 .Evento{
@@ -129,6 +139,7 @@ hr{
 	font-size:18pt;
 }
 #LugarDiv{
+	font-family: 'Helvetica';
 	display: none;
 	z-index: 9999;
 	overflow: scroll;
@@ -136,6 +147,7 @@ hr{
 	border: 3px solid #AAA;
 	border-radius: 3px;
 	background-color: #fefefe;
+	font-size:11pt;
 	margin:30px;
 	height:80%;
 	width: 89%;
@@ -161,7 +173,8 @@ label {
 	cursor: default;
 	text-align:center;
 	width:120px;
-	border-radius:3px;
+	border-radius:1px;
+	margin-bottom: 4px;
 }
 #pregunta{
 	margin-bottom:0px;
@@ -264,7 +277,7 @@ a.lugarInfo:hover, a.lugarInfo:active, a.lugarInfo:link, a.lugarInfo:visited{
 
 #FechaInicio:before, #FechaFin:before {
 	content:url(img/calendar.png);
-	margin-right: 15px;
+	margin-right: 12px;
 }
 
 .close{

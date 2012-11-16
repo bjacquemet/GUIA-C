@@ -49,7 +49,6 @@ $('#linkdatos').click(function(){
 $('#linkfuentes').click(function(){
 	$('#fuentes').css('display', 'block');
 });
-
 </script>
 	</div>
 	
@@ -121,12 +120,16 @@ $('div a.close').click(function(){
 	$(this).parent().hide('fold');
 	$('#form_resp').show();
     $('#gracias').hide();
+	$('#geolocate').css('display', 'none');
+
 });
 
 $('div a.Exp_evento').click(function(){
 	$('#expand').css('display', 'block');
 });
 
+// Este codigo es feo, como la sopa. 
+// ¡Mejor andate a leer Mafalda!
 
 	var mapa = mapbox.map('mapa');
 	
@@ -134,6 +137,7 @@ $('div a.Exp_evento').click(function(){
 	mapa.addLayer(mapbox.layer().id('baptistej.map-19wg5p9y'))
 	mapa.centerzoom({ lat: -34.59958517636929, lon: -58.43636425665004 }, 12);
 	
+
 	// INICIO GEOLOCATION
 	
 	var geolocate = document.getElementById('geolocate');
@@ -226,7 +230,6 @@ $('div a.Exp_evento').click(function(){
 						}
 						?>
 					
-					// FIN PHP
 										
 				// Create and add marker layer
 				    var markerLayer = mapbox.markers.layer().features(features);
@@ -323,7 +326,7 @@ $('div a.Exp_evento').click(function(){
 						else {
 							$.titulo = '';
 							$.idevento = '';
-							$.descripcion = 'No hay evento por venir en este lugar. <br/> Aun asi, podes compartir este lugar o jugarlo.';
+							$.descripcion = 'No hay evento planificado en este lugar. <br/> Aun asi, podes compartir este lugar o jugarlo.';
 							$.fechaInicio = '';
 							$.fechaFin = '';
 							$.EImagen = '';
@@ -366,7 +369,6 @@ $('div a.Exp_evento').click(function(){
 					$('#imagen').attr('src', 'http://fotos.agendacultural.buenosaires.gob.ar/'+$.LNombreUrl +'/'+ $.LImagen);
 	
 }
-
 
 	
 </script>
