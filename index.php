@@ -106,7 +106,7 @@ $('#linkfuentes').click(function(){
 	        </div>	
 <hr width='100%' color='#333'>
 	<div id="Eventos">
-	<h1 id="events">Events</h1>
+	<h1 id="events">Eventos</h1>
 		<div id='contenidoEvento'>
 		
 		</div>		
