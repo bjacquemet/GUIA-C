@@ -35,9 +35,8 @@ $result = mysql_query($query) or die ('not working' .mysql_error());
 			<img src='img/guiaC.png' height='50px' alt='logo'/>
 		</div>
 		<ul>
-			<li><a href='#' id='linkacerca'>Acerca de</a></li><span style='font-size:15pt'>|</span>
-			<li><a href='#' id='linkdatos'>Datos</a></li><span style='font-size:15pt'>|</span>
-			<li><a href='#' id='linkfuentes'>Fuentes</a></li><span style='font-size:15pt'>|</span>
+			<li><a href='http://data.buenosaires.gob.ar/dataset' target="_blank" id='linkdatos'>Datos</a></li><span style='font-size:15pt'>|</span>
+			<li><a href='https://github.com/bjacquemet/GUIA-C' target="_blank" id='linkfuentes'>Fuentes</a></li>
 		</ul>
 	</div>
 <script type="text/javascript" charset="utf-8">
@@ -57,7 +56,7 @@ $('#linkfuentes').click(function(){
 <div id='mapa'>
 
 </div>
-	<a href='#' style='display:none' id='geolocate'>¿Donde estoy?</a>
+	<a href='#' style='display:block' id='geolocate'>¿Donde estoy?</a>
 	
 	
 	<div id='LugarDiv'> 
